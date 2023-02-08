@@ -6,8 +6,8 @@ repos:
     - id: check-merge-conflict
       args: [--assume-in-merge]
     - id: check-yaml
-    - id: end-of-file-fixer
-    - id: trailing-whitespace
     - id: detect-private-key
+    - id: end-of-file-fixer
     - id: mixed-line-ending
       args: [--fix=auto]
+    - id: trailing-whitespace
