@@ -2,13 +2,13 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   test:
-    name: Test
+    name: Test on Node v${{ matrix.node-version }}
 
     runs-on: ubuntu-latest
 
