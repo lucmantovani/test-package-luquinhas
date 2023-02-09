@@ -1,4 +1,18 @@
 repos:
+  # Websec hook is MANDATORY, DO NOT comment it.
+  - repo: https://github.com/mercadolibre/fury_websec-git-hooks
+    rev: v1.0.5
+    hooks:
+      - id: pre_commit_hook
+        stages: [commit]
+      - id: post_commit_hook
+        stages: [post-commit]
+  - repo: https://github.com/mercadolibre/fury_datasec-git-hooks
+    rev: 1.0.1
+    hooks:
+      - id: pre_commit_hook
+        stages: [commit]
+        verbose: true
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -11,7 +25,3 @@ repos:
     - id: mixed-line-ending
       args: [--fix=auto]
     - id: trailing-whitespace
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.33.0
-    hooks:
-    - id: eslint
