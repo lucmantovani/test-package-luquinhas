@@ -17,11 +17,14 @@ repos:
     rev: v4.4.0
     hooks:
     - id: check-added-large-files
+    - id: check-json
     - id: check-merge-conflict
       args: [--assume-in-merge]
     - id: check-yaml
     - id: detect-private-key
     - id: end-of-file-fixer
+    - id: no-commit-to-branch
+      args: [--branch, main, --branch, master, --branch, develop]
     - id: mixed-line-ending
       args: [--fix=lf]
     - id: trailing-whitespace
