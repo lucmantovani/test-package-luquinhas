@@ -28,3 +28,10 @@ repos:
     - id: mixed-line-ending
       args: [--fix=lf]
     - id: trailing-whitespace
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.33.0
+    hooks:
+    - id: eslint
+      additional_dependencies:
+      - eslint@8.33.0
+      - eslint-plugin-jest@27.2.1
