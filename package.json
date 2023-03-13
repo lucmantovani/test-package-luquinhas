@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "lib/"
+    "lib/*.js"
   ],
   "scripts": {
     "test": "jest --coverage"
