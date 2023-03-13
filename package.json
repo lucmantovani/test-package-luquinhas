@@ -4,6 +4,9 @@
   "type": "commonjs",
   "description": "",
   "main": "index.js",
+  "files": [
+    "lib/sub.js"
+  ],
   "scripts": {
     "test": "jest --coverage"
   },
